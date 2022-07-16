@@ -1,0 +1,7 @@
+.header-two {
+    border-bottom: 1px solid #ECECEC;
+    & .container {
+            @extend %align-list;
+        }
+}
+
