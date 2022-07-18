@@ -89,7 +89,6 @@ button {
     max-width: 1200px;
   }
 }
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -444,9 +443,17 @@ button {
   background-color: #188ce8;
 }
 
-.company {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 768px) {
+  .company {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .description {
@@ -484,7 +491,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .description__facts {
-    flex-basis: calc((100% - 30px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -537,9 +544,19 @@ button {
 }
 
 .masters {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: #F5F4FA;
+}
+@media screen and (min-width: 768px) {
+  .masters {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .masters {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team {
@@ -554,19 +571,6 @@ button {
 
 .workers-list {
   display: flex;
-  margin-left: -30px;
-}
-@media screen and (min-width: 768px) {
-  .workers-list {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .workers-list {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .workers-list__item {
@@ -583,7 +587,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .workers-list__item {
-    width: calc((100% - 30px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 

@@ -1,6 +1,12 @@
 .company {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+    }
 }
 
 .description {
@@ -34,10 +40,9 @@
             margin-right: 30px;
         }
     @media screen and (min-width: 1200px) {
-            flex-basis: calc((100% - 30px) / 4);
+            flex-basis: calc((100% - 90px) / 4);
         }
 }
-
 
 .description__company-ben {
     @extend %align-list;
