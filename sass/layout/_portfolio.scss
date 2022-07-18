@@ -1,17 +1,31 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+    }
 }
 
 .filter {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.filter-item:not(:last-child) {
-    margin-right: 8px;
+.filter {
+    @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
+    @media screen and (min-width: 1200px) {
+            justify-content: center;
+        }
 }
+
 
 .pre-main-button {
     font-family: inherit;
@@ -42,18 +56,21 @@
         }
 }
 
-
-
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    gap: 30px;
 }
 
 .gallery-item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin: 15px;
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    @media screen and (min-width: 1200px) {
+            width: calc((100% - 60px) / 3);
+        }
+    // flex-basis: calc(100% / 3 - 30px);
+    // margin: 15px;
     &:hover,
     &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -61,8 +78,6 @@
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
 }
-
-
 
 .gallery .link:hover .description-wrapper,
 .gallery .link:focus .description-wrapper {

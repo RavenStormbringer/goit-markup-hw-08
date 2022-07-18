@@ -1,4 +1,7 @@
 .company {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
     @media screen and (min-width: 768px) {
             padding-top: 60px;
             padding-bottom: 60px;
@@ -10,9 +13,16 @@
 }
 
 .description {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .title {
@@ -35,10 +45,9 @@
 }
 
 .description__facts {
-    margin-bottom: 30px;
+    width: 100%;
     @media screen and (min-width: 768px) {
             flex-basis: calc((100% - 30px) / 2);
-            margin-right: 30px;
         }
     @media screen and (min-width: 1200px) {
             flex-basis: calc((100% - 90px) / 4);
@@ -48,8 +57,8 @@
 .description__company-ben {
     @extend %align-list;
     justify-content: center;
-    width: 270px;
     height: 120px;
+    border-radius: 4px;
     background-color: #F5F4FA;
     margin-bottom: 30px;
 }

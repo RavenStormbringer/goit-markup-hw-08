@@ -20,41 +20,87 @@
 
 <body>
 
-    <!--header-->
-    <header class="header-two">
+    <header class="header">
         <div class="container">
-            <nav class="nav">
+            <div class="logo-tab">
                 <a href="" class="logo link nav__logo">Web<span class="nav__logoo">Studio</span></a>
-                <ul class="menu list">
-                    <li class="menu__item">
-                        <a class="menu__link link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link current link" href="portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__mail link">
-                        <svg class="contacts__svg" width="16" height="12">
-                            <use href="./img/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__phone link">
-                        <svg class="contacts__svg" width="10" height="16">
-                            <use href="./img/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +380961111111
-                    </a>
-                </li>
-            </ul>
+            </div>
+            <div class="header-tab">
+                <div class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="./index.html" class="nav-list__link link ">Студия</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="./portfolio.html" class="nav-list__link link current">Портфолио</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-contacts">
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <a href="mailto:info@devstudio.com" class="contacts-list__link-mail">
+                                <svg class="contacts-list__icon" width="14" height="10">
+                                    <use href="./img/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a href="tel:+380961111111" class="contacts-list__link-tel">
+                                <svg class="contacts-list__icon" width="10" height="14">
+                                    <use href="./img/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                +380961111111</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="open-menu-btn">
+                <svg class="menu-icon" width="40" height="40">
+                    <use href="./img/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden">
+                <button type="button" class="close-menu-btn">
+                    <svg class="menu-icon" width="40" height="40">
+                        <use href="./img/icons.svg#icon-close-black-18dp-2-1-1"></use>
+                    </svg>
+                </button>
+                <div class="container">
+                    <div class="mob-top">
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="./index.html" class="nav-list__link link ">Студия</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="./portfolio.html" class="nav-list__link link current">Портфолио</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="" class="nav-list__link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-bottom">
+                        <ul class="contacts-list">
+                            <li class="contacts-list__item"><a href="tel:+380961111111"
+                                    class="contacts-list__link-tel">+380961111111</a></li>
+                            <li class="contacts-list__item"><a href="mailto:info@devstudio.com"
+                                    class="contacts-list__link-mail">info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="soc-list">
+                            <li class="soc-list__item"><a href="" class="soc-list__link">Instagram</a></li>
+                            <li class="soc-list__item"><a href="" class="soc-list__link">Twitter</a></li>
+                            <li class="soc-list__item"><a href="" class="soc-list__link">Facebook</a></li>
+                            <li class="soc-list__item"><a href="" class="soc-list__link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -85,7 +131,24 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                         <div class="project-figure">
+                            <picture>
+                                <source srcset="
+                                                            ./img/3.1.png        1x,
+                                                            ./img/3-1-2x.jpg     2x
+                                        " media="(min-width: 1200px)"
+                                />
+                                <source srcset="
+                                                            ./img/3-1-tabl.jpg        1x,
+                                                            ./img/3-1-tabl-2x.jpg     2x
+                                        " media="(min-width: 768px)"
+                                />
+                                <source srcset="
+                                                            ./img/3-1-mob.jpg        1x,
+                                                            ./img/3-1-mob-2x.jpg     2x
+                                        " media="(min-width: 480px)"
+                                />
                                 <img class="projects-image" src="img/3.1.png" width="370" alt="Фото на компьютере" />
+                            </picture>                        
                             <div class="description-wrapper">
                                 <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -103,7 +166,24 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                             <div class="project-figure">
-                        <img src="img/3.2.png" width="370" alt="Баскетбольный матч" />
+                                <picture>
+                                    <source srcset="
+                                                            ./img/3.2.png        1x,
+                                                            ./img/3-2-2x.jpg     2x
+                                        " media="(min-width: 1200px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-2-tabl.jpg        1x,
+                                                            ./img/3-2-tabl-2x.jpg     2x
+                                        " media="(min-width: 768px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-2-mob.jpg        1x,
+                                                            ./img/3-2-mob-2x.jpg     2x
+                                        " media="(max-width: 767px)"
+                                    />
+                                    <img src="img/3.2.png" width="370" alt="Баскетбольный матч" />
+                                </picture>
                         <div class="description-wrapper">
                             <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -121,7 +201,24 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                             <div class="project-figure">
-                        <img src="img/3.3.png" width="370" alt="Логотип ресторана" />
+                                <picture>
+                                    <source srcset="
+                                                            ./img/3.3.png        1x,
+                                                            ./img/3-3-2x.jpg     2x
+                                        " media="(min-width: 1200px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-3-tabl.jpg        1x,
+                                                            ./img/3-3-tabl-2x.jpg     2x
+                                        " media="(min-width: 768px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-3-mob.jpg        1x,
+                                                            ./img/3-3-mob-2x.jpg     2x
+                                        " media="(max-width: 767px)"
+                                    />
+                                    <img src="img/3.3.png" width="370" alt="Логотип ресторана" />
+                                </picture>
                         <div class="description-wrapper">
                                 <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -139,7 +236,24 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                             <div class="project-figure">
-                        <img src="img/3.4.png" width="370" alt="Наушники" />
+                                <picture>
+                                    <source srcset="
+                                                            ./img/3.4.png        1x,
+                                                            ./img/3-4-2x.jpg     2x
+                                        " media="(min-width: 1200px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-4-tabl.jpg        1x,
+                                                            ./img/3-4-tabl-2x.jpg     2x
+                                        " media="(min-width: 768px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-4-mob.jpg        1x,
+                                                            ./img/3-4-mob-2x.jpg     2x
+                                        " media="(max-width: 767px)"
+                                    />
+                                    <img src="img/3.4.png" width="370" alt="Наушники" />
+                                </picture>
                         <div class="description-wrapper">
                                 <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -157,7 +271,21 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                             <div class="project-figure">
-                        <img src="img/3.5.png" width="370" alt="Упаковочные боксы" />
+                                <picture>
+                                    <source srcset="
+                                                            ./img/3.5.png        1x,
+                                                            ./img/3-5-2x.jpg     2x
+                                         " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                                            ./img/3-5-tabl.jpg        1x,
+                                                            ./img/3-5-tabl-2x.jpg     2x
+                                         " media="(min-width: 768px)" />
+                                    <source srcset="
+                                                            ./img/3-5-mob.jpg        1x,
+                                                            ./img/3-5-mob-2x.jpg     2x
+                                         " media="(max-width: 767px)" />
+                                    <img src="img/3.5.png" width="370" alt="Упаковочные боксы" />
+                                </picture>
                         <div class="description-wrapper">
                                 <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -175,7 +303,24 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                             <div class="project-figure">
-                        <img src="img/3.6.png" width="370" alt="Монитор" />
+                                <picture>
+                                    <source srcset="
+                                                            ./img/3.6.png        1x,
+                                                            ./img/3-6-2x.jpg     2x
+                                        " media="(min-width: 1200px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-6-tabl.jpg        1x,
+                                                            ./img/3-6-tabl-2x.jpg     2x
+                                        " media="(min-width: 768px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-6-mob.jpg        1x,
+                                                            ./img/3-6-mob-2x.jpg     2x
+                                        " media="(max-width: 767px)"
+                                    />
+                                    <img src="img/3.6.png" width="370" alt="Монитор" />
+                                </picture>
                         <div class="description-wrapper">
                                 <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -193,7 +338,24 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                             <div class="project-figure">
-                        <img src="img/3.7.png" width="370" alt="Книга" />
+                                <picture>
+                                    <source srcset="
+                                                            ./img/3.7.png        1x,
+                                                            ./img/3-7-2x.jpg     2x
+                                        " media="(min-width: 1200px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-7-tabl.jpg        1x,
+                                                            ./img/3-7-tabl-2x.jpg     2x
+                                        " media="(min-width: 768px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-7-mob.jpg        1x,
+                                                            ./img/3-7-mob-2x.jpg     2x
+                                        " media="(max-width: 767px)"
+                                    />
+                                    <img src="img/3.7.png" width="370" alt="Книга" />
+                                </picture>
                         <div class="description-wrapper">
                                 <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -211,7 +373,24 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                             <div class="project-figure">
-                        <img src="img/3.8.png" width="370" alt="Подвеска" />
+                                <picture>
+                                    <source srcset="
+                                                            ./img/3.8.png        1x,
+                                                            ./img/3-8-2x.jpg     2x
+                                        " media="(min-width: 1200px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-8-tabl.jpg        1x,
+                                                            ./img/3-8-tabl-2x.jpg     2x
+                                        " media="(min-width: 768px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-8-mob.jpg        1x,
+                                                            ./img/3-8-mob-2x.jpg     2x
+                                        " media="(max-width: 767px)"
+                                    />    
+                                    <img src="img/3.8.png" width="370" alt="Подвеска" />
+                                </picture>
                         <div class="description-wrapper">
                                 <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -229,7 +408,24 @@
                     <li class="gallery-item">
                         <a class="link" href="">
                             <div class="project-figure">
-                        <img src="img/3.9.png" width="370" alt="Работа за компьютером" />
+                                <picture>
+                                    <source srcset="
+                                                            ./img/3.9.png        1x,
+                                                            ./img/3-9-2x.jpg     2x
+                                        " media="(min-width: 1200px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-9-tabl.jpg        1x,
+                                                            ./img/3-9-tabl-2x.jpg     2x
+                                        " media="(min-width: 768px)"
+                                    />
+                                    <source srcset="
+                                                            ./img/3-9-mob.jpg        1x,
+                                                            ./img/3-9-mob-2x.jpg     2x
+                                        " media="(max-width: 767px)"
+                                    />
+                                    <img src="img/3.9.png" width="370" alt="Работа за компьютером" />
+                                </picture>
                         <div class="description-wrapper">
                                 <p class="project-description">
                                 Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -249,56 +445,54 @@
         </section>
     </main>
 
-        <!--footer-->
-        <footer class="footer">
-            <div class="container">
-                <div class="adress-container">
-                    <a href="" class="footer-logo link">Web<span class="footer-logoo">Studio</span></a>
-                    <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
-                    <ul class="footer-contacts">
-                        <li class="footer-contacts-item">
-                            <a href="mailto:info@devstudio.com" class="footer-mail link">info@example.com</a>
-                        </li>
-                        <li class="footer-contacts-item">
-                            <a href="tel:+380961111111" class="footer-phone link">+38 099 111 11 11</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="company-soc">
-                    <p class="soc">Присоединяйтесь</p>
-                    <ul class="company-soc-list">
-                        <li class="company-soc-item">
-                            <a href="" class="company-soc-link link">
-                                <svg class="company-soc-icon" width="20" height="20">
-                                    <use href="./img/icons.svg#icon-instagram-2"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="company-soc-item">
-                            <a href="" class="company-soc-link link">
-                                <svg class="company-soc-icon" width="20" height="20">
-                                    <use href="./img/icons.svg#icon-twitter-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="company-soc-item">
-                            <a href="" class="company-soc-link link">
-                                <svg class="company-soc-icon" width="20" height="20">
-                                    <use href="./img/icons.svg#icon-facebook-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="company-soc-item">
-                            <a href="" class="company-soc-link link">
-                                <svg class="company-soc-icon" width="20" height="20">
-                                    <use href="./img/icons.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <footer class="footer">
+        <div class="container footer-cont">
+            <div class="footer-nav block">
+                <a href="" class="footer-logo link">Web<span class="footer-logoo">Studio</span> </a>
+                <address class="footer-nav__adress">г. Киев, пр-т Леси Украинки, 26</address>
+                <ul class="footer-nav-list">
+                    <li><a href="mailto:info@example.com" class="footer-nav-list__link link">info@example.com</a></li>
+                    <li><a href="tel:+380991111111" class="footer-nav-list__link link">+380991111111</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="footer-links block">
+                <h3 class="footer-title">присоединяйтесь</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="" class="footer-list__link"><svg class="footer-list__icon"
+                                width="20" height="20">
+                                <use href="./img/icons.svg#icon-instagram-2"></use>
+                            </svg></a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link"><svg class="footer-list__icon"
+                                width="20" height="20">
+                                <use href="./img/icons.svg#icon-twitter-1"></use>
+                            </svg></a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link"><svg class="footer-list__icon"
+                                width="20" height="20">
+                                <use href="./img/icons.svg#icon-facebook-1"></use>
+                            </svg></a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link"><svg class="footer-list__icon"
+                                width="20" height="20">
+                                <use href="./img/icons.svg#icon-linkedin-1"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <form class="form block">
+                <p class="form-title">Подпишитесь на рассылку</p>
+                <div class="form-wrap">
+                    <label class="form-label">
+                        <input class="input-form" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="form-btn" type="submit">Подписаться
+                        <svg class="icon-form" width="24" height="24">
+                            <use href="./img/icons.svg#icon-icon-send-1"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </footer>
+    
+        <script src="./js/menu.js"></script>
         
 </body>
 
