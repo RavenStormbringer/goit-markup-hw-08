@@ -14,8 +14,6 @@
     pointer-events: none;
 }
 
-
-
 .modal {
     padding: 40px;
     position: absolute;
@@ -51,11 +49,13 @@
     transition: color var(--primary-transition-time) var(--primary-cubic-function);
     &:hover,
     &:focus {
-            color: #2196F3;
-        }
+    border-color: #188ce8;
+    }
+    &:hover,
+    &:focus {
+    fill: #188ce8;
+    }
 }
-
-
 
 .modal-title {
     font-weight: 700;
@@ -114,7 +114,6 @@
         }
 }
 
-
 .input-icon {
     position: absolute;
     left: 15px;
@@ -126,7 +125,6 @@
         fill: var(--hover-color);
     }
 }
-
 
 .modal-text-area {
     width: 100%;
@@ -179,10 +177,6 @@
             fill: white;
         }
 }
-
-
-
-
 
 .modal-button {
     width: 200px;

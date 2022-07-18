@@ -26,7 +26,6 @@
         }
 }
 
-
 .pre-main-button {
     font-family: inherit;
     font-weight: 500;
@@ -69,8 +68,6 @@
     @media screen and (min-width: 1200px) {
             width: calc((100% - 60px) / 3);
         }
-    // flex-basis: calc(100% / 3 - 30px);
-    // margin: 15px;
     &:hover,
     &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
