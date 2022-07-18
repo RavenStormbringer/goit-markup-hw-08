@@ -89,6 +89,7 @@ button {
     max-width: 1200px;
   }
 }
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -458,7 +459,8 @@ button {
 
 .description {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .title {
@@ -571,11 +573,12 @@ button {
 
 .workers-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .workers-list__item {
   width: 100%;
-  margin-left: 30px;
   background-color: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.16);
   border-radius: 0px 0px 4px 4px;
@@ -649,23 +652,37 @@ button {
   fill: currentColor;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .company-clients {
-  width: 170px;
   height: 92px;
 }
-
-.company-clients + .company-clients {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .company-clients {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .company-clients {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .company-clients-link {

@@ -22,6 +22,8 @@
 
 .workers-list {
     display: flex;
+    flex-wrap: wrap;
+        gap: 30px;
 }
 
 .workers-list__item {
@@ -33,7 +35,7 @@
             width: calc((100% - 90px) / 4);
         }
     // flex-basis: calc(100% - 90px) / 3;
-    margin-left: 30px;
+    
     background-color: var(--main-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
