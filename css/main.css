@@ -473,6 +473,21 @@ button {
   max-width: 260px;
 }
 
+.description__facts {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .description__facts {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description__facts {
+    flex-basis: calc((100% - 30px) / 4);
+  }
+}
+
 .description__company-ben {
   justify-content: center;
   width: 270px;
@@ -568,7 +583,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .workers-list__item {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 30px) / 4);
   }
 }
 
