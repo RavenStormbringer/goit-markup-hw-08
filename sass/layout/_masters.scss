@@ -15,12 +15,28 @@
 }
 
 .workers-list {
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+     @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }
     display: flex;
     margin-left: -30px;
 }
 
 .workers-list__item {
-    flex-basis: calc(100% - 90px) / 3;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    
+    @media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+        }
+    // flex-basis: calc(100% - 90px) / 3;
     margin-left: 30px;
     background-color: var(--main-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
