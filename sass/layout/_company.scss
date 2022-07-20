@@ -1,6 +1,6 @@
 .company {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     
     @media screen and (min-width: 768px) {
             padding-top: 60px;
@@ -29,19 +29,33 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--pre-main-color);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .title-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    max-width: 450px;
+    @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+    @media screen and (min-width: 1200px) {
+            max-width: 270px;
+        }
     letter-spacing: 0.03em;
     color: var(--text-color);
-    max-width: 260px;
+    margin-bottom: 30px;
 }
 
 .description__facts {

@@ -11,6 +11,26 @@
         }
 }
 
+.team {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+        @media screen and (min-width: 768px) {
+            font-size: 28px;
+            line-height: 1.18px;
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.28px;
+            margin-bottom: 50px;
+        }
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--pre-main-color);
+        margin-bottom: 30px;
+}
+
 .clients-list {
     display: flex;
     flex-wrap: wrap;
