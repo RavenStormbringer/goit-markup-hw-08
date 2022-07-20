@@ -239,13 +239,24 @@ button {
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03;
   color: #757575;
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .check-text {
+    width: max-content;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-text a {
