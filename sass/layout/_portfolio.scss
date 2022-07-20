@@ -14,19 +14,19 @@
 .filter {
     display: flex;
     justify-content: left;
-    margin-bottom: 30px;
     flex-wrap: wrap;
     gap: 8px;
-}
-
-.filter {
+    margin-bottom: 40px;
     @media screen and (min-width: 768px) {
             justify-content: center;
+            margin-bottom: 30px;
         }
     @media screen and (min-width: 1200px) {
             justify-content: center;
+            margin-bottom: 50px;
         }
 }
+
 
 .pre-main-button {
     font-family: inherit;

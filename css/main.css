@@ -1415,19 +1415,20 @@ button {
 .filter {
   display: flex;
   justify-content: left;
-  margin-bottom: 30px;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 40px;
 }
-
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .filter {
     justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
