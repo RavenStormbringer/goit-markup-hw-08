@@ -1,11 +1,10 @@
 .company {
-    padding-top: 60px;
-    padding-bottom: 30px;
-    
+        padding-top: 60px;
+        padding-bottom: 60px;
     @media screen and (min-width: 768px) {
             padding-top: 60px;
             padding-bottom: 60px;
-        }
+    }
     @media screen and (min-width: 1200px) {
             padding-top: 94px;
             padding-bottom: 94px;
@@ -23,6 +22,15 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+}
+
+.description__company-ben {
+    @extend %align-list;
+    justify-content: center;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
 }
 
 .title {
@@ -55,7 +63,6 @@
         }
     letter-spacing: 0.03em;
     color: var(--text-color);
-    margin-bottom: 30px;
 }
 
 .description__facts {
@@ -68,12 +75,11 @@
         }
 }
 
-.description__company-ben {
-    @extend %align-list;
-    justify-content: center;
-    height: 120px;
-    border-radius: 4px;
-    background-color: #F5F4FA;
+.description__facts:not(:last-child) {
+    @media screen and (max-width: 767px) {
     margin-bottom: 30px;
+        }   
 }
+
+
 

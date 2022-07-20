@@ -728,18 +728,12 @@ button {
   .main-name {
     max-width: 360px;
     line-height: 1.62;
-    font-size: 42px;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-name {
     max-width: 696px;
-    line-height: 1.36;
-    font-size: 42px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main-name {
     line-height: 1.36;
     font-size: 44px;
   }
@@ -770,7 +764,7 @@ button {
 
 .company {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .company {
@@ -798,6 +792,14 @@ button {
     flex-wrap: wrap;
     gap: 30px;
   }
+}
+
+.description__company-ben {
+  justify-content: center;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -828,7 +830,6 @@ button {
   max-width: 450px;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .title-text {
@@ -855,12 +856,10 @@ button {
   }
 }
 
-.description__company-ben {
-  justify-content: center;
-  height: 120px;
-  border-radius: 4px;
-  background-color: #F5F4FA;
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .description__facts:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .work-projects {
@@ -869,7 +868,6 @@ button {
 @media screen and (max-width: 1199px) {
   .work-projects {
     display: none;
-    margin-bottom: 50px;
   }
 }
 
@@ -934,19 +932,18 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--pre-main-color);
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .team {
     font-size: 28px;
-    line-height: 1.18px;
+    line-height: 1.18;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team {
     font-size: 36px;
-    line-height: 1.28px;
+    line-height: 1.28;
     margin-bottom: 50px;
   }
 }
@@ -1061,14 +1058,14 @@ button {
 @media screen and (min-width: 768px) {
   .team {
     font-size: 28px;
-    line-height: 1.18px;
+    line-height: 1.18;
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team {
     font-size: 36px;
-    line-height: 1.28px;
+    line-height: 1.28;
     margin-bottom: 50px;
   }
 }
